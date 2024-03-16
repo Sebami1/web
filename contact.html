@@ -102,21 +102,24 @@
                         <div class="col-md-12 ">
                            <h3>Contact Us</h3>
                         </div>
-                        <div class="col-md-12 ">
-                           <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number"> 
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactus" placeholder="Email" type="type" name="Email">                          
-                        </div>
-                        <div class="col-md-12">
-                           <input class="contactusmess" placeholder="Message" type="type" Message="Name">
-                        </div>
-                        <div class="col-md-12">
-                           <button class="send_btn">Send</button>
-                        </div>
+                        <form action="enviar_correo.php">
+                           <div class="col-md-12 ">
+                              <input class="contactus" placeholder="Nombre" type="text" name="nombre" required> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" type="email" placeholder="Email" id="email" name="email" required> 
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" type="text" id="mensaje" name="mensaje" placeholder="Ingrese su mensaje">                          
+                           </div>
+                           <div class="col-md-12">
+                              <input class="contactus" type="email" id="correo_remitente" name="correo_remitente" placeholder="Enviarr copia a mi Correo">
+                           </div>
+                           <div class="col-md-12">
+                              <input  type="submit" value="Enviar">
+                           </div>
+                        </form>
+                        
                      </div>
                   </form>
                </div>
